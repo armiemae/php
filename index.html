@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+  <head> 
+    <title>Form</title>
+   
+<body> 
+    <link rel="stylesheet" href="style.css">
+            <div class="left">
+                <br>
+                <div class="profile-img"><img src="profile.jpeg"></div>
+            
+                
+    <form name="myform" method="post" onSubmit="return validate()">
+        <table>
+          <tr>
+            <td> Full Name: </td>
+            <td> <input type="text" name="FN" style="height: 27px; font-size: 20; width: 100%;"> </td>
+          </tr>
+
+          <tr>
+              <td>  Full Address:  </td> 
+              <td> <input type ="text" name="FA"> </td> <br>
+          </tr> 
+          
+          <tr>
+          
+              <td>  Phone Number: </td>  
+              <td> <input type="text" name="Num"> </td> <br>
+          </tr>
+      
+          <tr>
+              <td> Email: </td>
+              <td> <input type="text" name="Em"> <td> <br>
+          </tr>
+          
+        </table>
+  
+        <table> 
+      
+          <tr>
+              <td style="width:200px"> First Name: </td>
+              <td style="width:200px"> Last Name: </td>
+              <td style="width:200px"> MI: </td>
+          </tr>
+          
+          <tr> 
+              <td> <input type="text" name="fname"> </td>
+              <td> <input type="text" name="lname"> </td>
+              <td> <input type ="text" name="Mname"> </td>
+          </tr>
+        </table>
+              
+        <table> 
+      
+          <tr>
+              <td> Gender: </td>
+              <td> <input type="radio" name="Gender"> Male </td>
+              <td> <input type="radio" name="Gender"> Female </td>
+          </tr>
+      
+        </table> 
+
+        <table>
+      
+          <tr>
+              <td> Age: </td>
+              <td> <input type="Number" name="Age"> </td>
+          </tr>
+          
+        </table>
+  
+        <table> 
+          <tr>
+              <td> Birthday: </td>
+              <td>
+              <select name="dob-day" id="dob-day"> 
+                <option value="">Day</option>
+                <option value="">---</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+              </td>
+              
+              <td> 
+              <select name="dob-month" id="dob-month">
+                <option value="">Month</option>
+                <option value="">-----</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select> </td>
+              
+              <td>
+              <select name="dob-year" id="dob-year">
+                <option value="">Year</option>
+                <option value="">----</option>
+                <option value="2012">2022</option>
+                <option value="2012">2021</option>
+                <option value="2012">2020</option>
+                <option value="2012">2019</option>
+                <option value="2012">2018</option>
+                <option value="2012">2017</option>
+                <option value="2012">2016</option>
+                <option value="2012">2015</option>
+                <option value="2012">2014</option>
+                <option value="2012">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+                <option value="1999">1999</option>
+                <option value="1998">1998</option>
+                <option value="1997">1997</option>
+                <option value="1996">1996</option>
+                <option value="1995">1995</option>
+                <option value="1994">1994</option>
+                <option value="1993">1993</option>
+                <option value="1992">1992</option>
+                <option value="1991">1991</option>
+                <option value="1990">1990</option>
+                <option value="1989">1989</option>
+                <option value="1988">1988</option>
+                <option value="1987">1987</option>
+                <option value="1986">1986</option>
+                <option value="1985">1985</option>
+                <option value="1984">1984</option>
+                <option value="1983">1983</option>
+                <option value="1982">1982</option>
+                <option value="1981">1981</option>
+
+              </select> </td> 
+          <tr>
+        </table>
+      
+        <table> 
+      
+          <tr>
+              <td> Place of Birth: </td>
+              <td> <input type ="text" name="PL"> </td> 
+          </tr>
+          
+          <tr> 
+              <td> Nationality: </td>
+              <td><input type ="text" name="Nat"> </td>
+          </tr> 
+          <tr>
+              <td> Civil Status: </td>
+              <td>
+              <select name="Status" id="CS">
+              <option value=""> </option>
+              <option value="Single">Single</option>
+              <option value="Married">Married</option>
+              </select> </td>
+          </tr>
+          <tr> 
+              <td> Height: </td>
+              <td> <input type ="text" name="Height"> </td>
+          </tr>
+          <tr>
+              <td> Weight: </td>
+              <td> <input type ="text" name="Weight"> </td> 
+          </tr> 
+          <tr>
+              <td> Language: </td>
+              <td> 
+              <select name="Lan" id="LG"> <br>
+              <option value=""> </option>
+              <option value="Filipino">Filipino</option>
+              <option value="English">English</option>
+              </select> </td>
+          </tr>
+          <tr> 
+              <td> Religion: </td> 
+              <td> <input type ="text" name="Religion"> </td> 
+          </tr> 
+          
+          <tr>
+              <td> Mothers Name: </td>
+              <td> <input type ="text" name="Mothers"> </td> 
+          </tr>
+          
+          <tr>
+              <td> Fathers Name: </td>
+              <td> <input type ="text" name="Fathers"> <td> 
+          </tr>
+          </table>
+          <table>
+          <tr> <br>
+            <td colspanl="2" align="center"> <input type="submit" name="submit" id= "submit" value="Submit"></td>
+          </tr>
+          </table> 
+            </div>
+        </table>	
+    </form>
+            <script type="text/javascript">
+               function validate()
+             {
+                var FullN = document.forms["myform"]["FN"].value;
+                var FullA = document.forms["myform"]["FA"].value;
+                var PNum = document.forms["myform"]["Num"].value;
+                var Mail = document.forms["myform"]["Em"].value;
+                var FirstN = document.forms["myform"]["fname"].value;
+                var LN = document.forms["myform"]["lname"].value;
+                var MI = document.forms["myform"]["Mname"].value;
+                var Gen = document.forms["myform"]["Gender"].value;
+                var Ages = document.forms["myform"]["Age"].value;
+                var Birth = document.forms["myform"]["dob-day"].value;
+                var Month = document.forms["myform"]["dob-month"].value;
+                var Yr = document.forms["myform"]["dob-year"].value;
+                var PB = document.forms["myform"]["PL"].value;
+                var Nation = document.forms["myform"]["Nat"].value;
+                var Civil = document.forms["myform"]["Status"].value;
+                var height = document.forms["myform"]["Height"].value;
+                var weight = document.forms["myform"]["Weight"].value;
+                var lang = document.forms["myform"]["Lan"].value;
+                var religion = document.forms["myform"]["Religion"].value;
+                var mothers = document.forms["myform"]["Mothers"].value;
+                var fathers = document.forms["myform"]["Fathers"].value;
+
+                if (FullN == ""){
+                    alert("Enter your Full Name");
+                    return false;
+                }
+                if (FullA == ""){
+                    alert("Enter your Full Full Address");
+                    return false;
+                }
+                if (PNum == ""){
+                    alert("Enter your Phone Number");
+                    return false;
+                }
+                if (Mail == ""){
+                    alert("Enter your Mail");
+                    return false;
+                }
+                if (FirstN == ""){
+                    alert("Enter your First Name");
+                    return false;
+                }
+                if (LN == ""){
+                    alert("Enter your Last Name");
+                    return false;
+                }
+                if (MI == ""){
+                    alert("Enter your Middle Initial");
+                    return false;
+                }
+                if (Gen == ""){
+                    alert("Select your Gender");
+                    return false;
+                }
+                if (Ages == ""){
+                    alert("Enter your Age");
+                    return false;
+                }
+                if (Birth == ""){
+                    alert("Select your Birthday");
+                    return false;
+                }
+                if (Month == ""){
+                    alert("Select your Birth Month");
+                    return false;
+                }
+                if (Yr == ""){
+                    alert("Select Year");
+                    return false;
+                }
+                if (PB == ""){
+                    alert("Enter your Place of Birth");
+                    return false;
+                }
+                if (Nation == ""){
+                    alert("Enter your Nationality");
+                    return false;
+                }
+                if (Civil == ""){
+                    alert("Select Civil Status");
+                    return false;
+                }
+                if (height == ""){
+                    alert("Enter your Height");
+                    return false;
+                }
+                if (weight == ""){
+                    alert("Enter your Weight");
+                    return false;
+                }
+                if (lang == ""){
+                    alert("Select Languages");
+                    return false;
+                }
+                if (religion == ""){
+                    alert("Enter your Religion");
+                    return false;
+                }
+                if (mothers == ""){
+                    alert("Enter your Mother's Name");
+                    return false;
+                }
+                if (fathers == ""){
+                    alert("Enter your Father's Name");
+                    return false;
+                }
+                
+             }
+            </script>
+</body>
+</html>
